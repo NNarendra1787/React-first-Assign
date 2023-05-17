@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import Mess from './Mess';
+import FuncComp from './FuncComp';
+import ClassComp from './ClassComp';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class Class extends React.Component{
+  constructor(){
+    super();
+    this.state={
+      functionClick: false,
+      ClassClick: false
+    }
+  }
+  render(){
+    return(
+      <div className='App'>
+        <Mess />
+        <div className='myButtons'>
+          <button id='btn1' onClick={()=> this.setState({functionClick: !this.state.functionClick})}>To see Styleing in Functional Component</button>
+          <button id='btn2' onClick={()=> this.setState({ClassClick: !this.state.ClassClick})}>To see Styleing in Class Component</button>
+
+              {this.state.functionClick && <FuncComp />}
+              {this.state.ClassClick && <ClassComp />}
+        </div>
+      </div>
+    );
+  }
 }
 
-export default App;
+export default Class
+
+
