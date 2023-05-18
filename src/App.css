@@ -69,7 +69,29 @@
   /* font-size: 18px; */
 }
 
+#btn1:hover, #btn2:hover{
+  background-color: cyan;
+}
+
 /* Boxes */
 .leftBox{
-  background-color: red;
+  background-color: cyan;
+  width: 500px;
+  position: absolute;
+  bottom: 110px;
+  left: 100px;
+  border: 3px solid black;
+  border-radius: 30px;
+  padding: 12px 3px;
+}
+.rightBox{
+  position: absolute;
+  bottom: 110px;
+  right: 100px;
+  background-color: rgb(186, 138, 234);
+  width: 500px;
+  border: 3px solid black;
+  border-radius: 30px;
+  padding: 12px 3px;
+  /* padding-bottom: 20px; */
 }
