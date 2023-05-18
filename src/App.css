@@ -1,7 +1,9 @@
 body{
   /* background-color: pink; */
-  background-image: linear-gradient(skyblue,pink,lightyellow );
-  background-repeat: no-repeat;
+  height: 100vh;
+  /* width: 100vh; */
+  background-image: linear-gradient(skyblue,pink,lightyellow);
+  background-repeat: no-repeat; 
 }
 .App {
   text-align: center;
