@@ -1,3 +1,8 @@
+body{
+  /* background-color: pink; */
+  background-image: linear-gradient(skyblue,pink,lightyellow );
+  background-repeat: no-repeat;
+}
 .App {
   text-align: center;
 }
@@ -41,9 +46,7 @@
 #myHead h1{
   font-size: 30px;
   font-weight: bold;
-  /* color: rebeccapurple; */
-  /* font-family: ; */
-  text-shadow: 2px 5px 2px skyblue;
+  text-shadow: 2px 3px 2px cyan;
 }
 
 
@@ -78,20 +81,20 @@
   background-color: cyan;
   width: 500px;
   position: absolute;
-  bottom: 110px;
+  bottom: 100px;
   left: 100px;
   border: 3px solid black;
   border-radius: 30px;
-  padding: 12px 3px;
+  /* padding: 12px 3px; */
+   padding-bottom: 30px;
 }
 .rightBox{
   position: absolute;
-  bottom: 110px;
+  bottom: 100px;
   right: 100px;
-  background-color: rgb(186, 138, 234);
+  background-color: rgb(202 167 237);
   width: 500px;
   border: 3px solid black;
   border-radius: 30px;
-  padding: 12px 3px;
-  /* padding-bottom: 20px; */
-}
+  padding-bottom: 30px;
+} 
