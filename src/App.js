@@ -4,7 +4,7 @@ import Mess from './Mess';
 import FuncComp from './FuncComp';
 import ClassComp from './ClassComp';
 
-class Class extends React.Component{
+class App extends React.Component{
   constructor(){
     super();
     this.state={
@@ -28,6 +28,6 @@ class Class extends React.Component{
   }
 }
 
-export default Class
+export default App
 
 
